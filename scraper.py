@@ -1,5 +1,5 @@
 import scraperwiki
-html = scraperwiki.scrape('http://britainelects.com/nowcast/')
+html = scraperwiki.scrape('http://inmo.ie/6022')
 import lxml.html
 root = lxml.html.fromstring(html) # turn our HTML into an lxml object
 tds = root.cssselect('td') # get all the <td> tags
