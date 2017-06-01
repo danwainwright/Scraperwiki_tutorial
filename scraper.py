@@ -8,5 +8,5 @@ for td in tds:
      try:
           scraperwiki.sqlite.save(["td"], record) # save the records one by one
      except:
-            record = { "td" : "NO ENTRY" }
+          record = { "td" : "NO ENTRY" }
           scraperwiki.sqlite.save(["td"], record)   
