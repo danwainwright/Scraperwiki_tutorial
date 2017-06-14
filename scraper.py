@@ -6,7 +6,7 @@ td = root.cssselect('td') # get all the <tr> tags
 for tr in trs:
      record td.text_content() # just the text inside the HTML tag
 for td in tds:
-     record = { "td" : td.text_content } # column name and value
+     record = { "td" : td.text } # column name and value
      try:
           scraperwiki.sqlite.save(["td"], record) # save the records one by one
      except:
